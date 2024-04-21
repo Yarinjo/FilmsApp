@@ -1,0 +1,8 @@
+.favorites-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 25px;
+}
+.favorites {
+	padding: 32px;
+}

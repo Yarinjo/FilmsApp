@@ -1,0 +1,51 @@
+.film {
+    position: relative;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    img {
+        border-radius: 20px;
+    }
+    
+}
+.lowerSection {
+    backdrop-filter: blur(20px);
+    background: linear-gradient(148deg, #fff 0%, #fff 100%);
+    opacity: 0.95;
+    padding: 16px 20px 24px 20px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+
+    position: absolute;
+    bottom: 0;
+
+    span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 114%;
+        color: #000;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+    }
+}
+.like {
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    backdrop-filter: blur(11.851852416992188px);
+    background: linear-gradient(147deg, #fff 0%, #fff 100%);;
+    
+   
+}
+

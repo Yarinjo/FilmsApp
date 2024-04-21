@@ -1,0 +1,32 @@
+.sidebar {
+	padding: 40px;
+	background: #21201E;
+	height: 100%;
+	min-width: 274px;
+	box-shadow: 2px 0px 90px rgba(97, 0, 194, 0.4);
+
+	display: flex;
+	flex-direction: column;
+}
+.mainSection {
+	display: flex;
+	flex-direction: column;
+	margin-top: 58px;
+	gap: 37px;
+}
+.communitySection {
+	display: flex;
+	flex-direction: column;
+	margin-top: 122px;
+	gap: 37px;
+}
+.settingsSection {
+	display: flex;
+	flex-direction: column;
+	margin-top: 257px;
+	gap: 37px;
+}
+.picture-link {
+	display: flex;
+	gap: 12px;
+}
