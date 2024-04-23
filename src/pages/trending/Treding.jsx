@@ -13,7 +13,7 @@ export const Trending = (props) => {
 		<>
 			<Header />
 			<div className="trending">
-				<div className="title">Trending</div>
+				<div className="title">Trending at this moment</div>
 				<div className="trending-list">
 					{listItems}
 				</div>

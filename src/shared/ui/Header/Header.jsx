@@ -16,7 +16,7 @@ export const Header = () => {
 		<div className='ml-auto'>
 			<button><img src={Search} alt="search" /></button>
 			<button><img src={Bell} alt="search" /></button>
-			<button><img className='profilePicture' src={ProfilePicture} alt="profile" /> Tetiana</button>
+			<button className='profile'><img className='profilePicture' src={ProfilePicture} alt="profile" /> Tetiana</button>
 
 		</div>
 
