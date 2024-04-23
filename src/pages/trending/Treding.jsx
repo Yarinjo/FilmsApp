@@ -3,11 +3,19 @@ import { Film } from "../../shared/ui/Film/Film";
 import { films } from "../../database/films";
 import StarPicture from "/src/assets/icons/star.svg";
 import HeartPicture from '/src/assets/icons/heart.svg'
+import { Modal } from "../../Components/Modal/Modal";
+import { useState } from "react";
 
 
 
 export const Trending = (props) => {
 	const listItems = films.map((film) => <Film key={film.id} film={film} />);
+
+	const [modal, setModal] = useState('PlaceForModal')
+	
+	function TheClick() {
+		setModal('showModal')
+	}
 
 	return (
 		<>
@@ -32,9 +40,12 @@ export const Trending = (props) => {
 					<p className="trendingDescription">{films[3].description}</p>
 					<div className="trendingButtons">
 						<button className="watchNow">Watch now</button>
-						<button className="addToFavourite"><img src={HeartPicture} alt="Heart" /></button>
+						<button className="addToFavourite" onClick={TheClick} > { modal === 'PlaceForModal' && <img src={HeartPicture} alt="Heart" />} {modal === !'showModal' &&<img src={HeartPicture} alt="Heart" />}{modal === 'showModal' && <Modal/>}</button>
 					</div>
 				</div>
+				{modal === 'PlaceForModal' && <p></p>}
+				
+				
 
 			</div>
 		</>
