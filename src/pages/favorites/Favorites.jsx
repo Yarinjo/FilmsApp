@@ -9,7 +9,7 @@ export const Favorites = () => {
 		<>
 			<Header />
 			<div className="favorites">
-				<div className="title">Favourites</div>
+				<div className="fav-title">Favourites</div>
 				<div className="favorites-list">
 					{listItems}
 				</div>

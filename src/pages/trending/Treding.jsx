@@ -21,7 +21,7 @@ export const Trending = (props) => {
 		<>
 			<Header />
 			<div className="trending">
-				<div className="title">Trending at this moment</div>
+				<div className="trending-title">Trending at this moment</div>
 				<div className="trending-list">
 					{listItems}
 				</div>
@@ -43,7 +43,7 @@ export const Trending = (props) => {
 						<button className="addToFavourite" onClick={TheClick} > { modal === 'PlaceForModal' && <img src={HeartPicture} alt="Heart" />} {modal === !'showModal' &&<img src={HeartPicture} alt="Heart" />}{modal === 'showModal' && <Modal/>}</button>
 					</div>
 				</div>
-				{modal === 'PlaceForModal' && <p></p>}
+				
 				
 				
 

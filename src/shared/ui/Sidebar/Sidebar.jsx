@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { LogoIcon } from "../../icons/Logo/LogoIcon"
 
 import HomePicture from '/src/assets/icons/film.svg'
-import HeartPicture from '/src/assets/icons/heart.svg'
+import HeartPicture from '/src/assets/icons/heart-fav.svg'
 import TrendingPicture from '/src/assets/icons/trending-up.svg'
 import CalendarPicture from '/src/assets/icons/calendar.svg'
 
